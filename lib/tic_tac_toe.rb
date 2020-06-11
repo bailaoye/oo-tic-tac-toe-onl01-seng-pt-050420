@@ -49,7 +49,6 @@ class TicTacToe
       move(index, current_player)
       display_board
     else
-      "Invalid, please try again"
       turn
     end
   end
