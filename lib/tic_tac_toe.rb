@@ -27,7 +27,7 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    (@board[index] == " ")
+    index.between?(0, 8) && (@board[index] == " ")
   end
 
   def turn_count
@@ -52,8 +52,6 @@ class TicTacToe
       turn
     end
   end
-
-
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
